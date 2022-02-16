@@ -1,0 +1,58 @@
+    @import "src/Theme/colors";
+
+.doctorPage{
+    overflow: hidden;
+    width: 100%;
+    background: $whiteBackground;
+    .heading {
+        margin-top: 1rem;
+        color:$primary;
+        font-size: 10vmin;
+        font-weight: bolder;
+        font-family: ProximaNovaBold;
+        text-align: center;
+        overflow: hidden;
+        // line-height: 1em;
+        // letter-spacing: 0.1em;
+    }
+    .sidetext {
+        margin-top: 5vmin;
+        margin-bottom: 20vmin;
+        padding: 5vmin;
+        color: $primary;
+        font-size: 5vmin;
+        //font-weight: bold;
+        font-family: ProximaNovaRegular;
+        line-height:5vmin ;
+    }
+
+    .doctor_stats_image {
+        display:flex;
+        margin-top: 5vh;
+        //align-items:center;
+        overflow:hidden;
+    }
+    .formCss{
+        background-color: $primary;
+        color:white;
+        font-family: ProximaNovaRegular;
+        
+    }
+}
+.bottomBanner{
+background-color:$primary;
+padding:"10px";
+overflow:"hidden";
+}
+.sideheading {
+    font-family:ProximaNovaBold;
+    font-size: 6vmin;
+    //font-weight: bolder;
+    color: $whiteColorHeader;
+}
+
+// @media only screen and (max-width: 768px) {
+//     .sidetext{
+//       text-align: center;
+//         }
+//      }

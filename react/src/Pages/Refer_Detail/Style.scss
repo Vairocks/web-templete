@@ -1,0 +1,185 @@
+@import "src/Theme/colors";
+.referDetailPage {
+    .referContainerDetail {
+        padding: 0rem 2rem 0 2rem;
+        margin: 5rem 0;
+        .enrollMessageTitle {
+            color: $darkBlue;
+            font-size: 2.5rem;
+            margin: 0;
+            font-family: "AVENIR_BOLD";
+            text-align: center;
+            padding: 0rem 0 0.2rem 0;
+        }
+        .enrollMessage {
+            margin: 0;
+            color: $headerMenuColor;
+            font-size: 1.5rem;
+            font-family: "AVENIR_REGULAR";
+            text-align: center;
+        }
+        .enrollMessage1 {
+            margin: 0 0 1rem 0;
+            color: $headerMenuColor;
+            font-size: 1rem;
+            font-family: "AVENIR_REGULAR";
+            text-align: center;
+        }
+        .stepsContainer {
+            display: flex;
+            margin: 5rem auto 0rem auto;
+            position: relative;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            .circle {
+                margin: 4%;
+                border-radius: 100%;
+                width: 180px;
+                height: 180px;
+                border-style: solid;
+                border-width: 3px;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                background: $whiteColorHeader;
+                svg {
+                    fill: $darkGrey;
+                }
+            }
+            .circle1 {
+                border-color: $red;
+            }
+            .circle2 {
+                border-color: $peach;
+            }
+            .circle3 {
+                border-color: $green;
+            }
+            .circle1_small {
+                background: $red;
+            }
+            .circle2_small {
+                background: $peach;
+            }
+            .circle3_small {
+                background: $green;
+            }
+            .numberCircle {
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+                border: solid 5px $whiteColorHeader;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .circle_medium {
+                border-radius: 100%;
+                width: 130px;
+                height: 130px;
+                background: $grey3;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .textNumber {
+                color: $whiteColorHeader;
+                font-size: 1.2rem;
+                font-family: "AVENIR_MEDIUM";
+            }
+            .connectingLine {
+                width: 100%;
+                border-radius: 15px;
+                position: absolute;
+                height: 20px;
+                background: $grey1;
+            }
+        }
+        .stepsContainer_title {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            max-width: 800px;
+            .circle_title {
+                margin: 0 3%;
+                width: 200px;
+                justify-content: center;
+                display: flex;
+                p {
+                    margin: 0;
+                    color: $darkGrey;
+                    font-size: 1.2rem;
+                    font-family: "AVENIR_MEDIUM";
+                }
+            }
+        }
+        .inviteText {
+            margin-top: 5rem; 
+            color: $darkBlue;
+            font-size: 1.5rem; 
+            font-family: "AVENIR_BOLD";
+            text-align: center;
+        }
+        .inviteText1 {
+            font-size: 1rem;
+            font-family: "AVENIR_REGULAR";
+        }
+        .referInputContainer {
+            width: 30rem;
+            flex-direction: row;
+            border: solid 1px $darkBlue;
+            margin: 1rem auto 8rem auto;
+            border-radius: 2rem;
+            padding: 0 0 0 1rem;
+            overflow: hidden;
+            display: flex;
+        }
+        .referButton {
+            border: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 2rem;
+            padding: 0.5rem 1rem;
+            background-image: linear-gradient(to left, $dashbaordGradient1, $dashbaordGradient) !important;
+            font-size: 1rem;
+            font-family: "AVENIR_REGULAR";
+            text-align: center;
+        }
+        .referinputfield {
+            border-radius: 2rem;
+            flex: 1;
+            background: $whiteColorHeader;
+            padding: 0.5rem 0.3rem;
+            margin: 0;
+            border: none;
+            color: $grey5;
+            outline: none !important;
+        }
+        .referinputfield::-webkit-input-placeholder {
+            color: $grey1;
+            font-size: 1rem;
+        }
+    }
+    .referDetailnoData {
+        margin-top: 10rem;
+    }
+
+    .submitButton_model {
+        font-family: "AVENIR_REGULAR";
+        font-weight: bold;
+        color: $whiteColorHeader;
+        border: none;
+        margin-top: 1rem;
+        width: 110px;
+        padding: 8px 0;
+        font-size: 0.9rem;
+        background-image: linear-gradient(to left, $dashbaordGradient1, $dashbaordGradient);
+    }
+}

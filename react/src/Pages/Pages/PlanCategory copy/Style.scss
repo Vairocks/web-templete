@@ -1,0 +1,219 @@
+@import "src/Theme/colors";
+
+.parent {
+  background-color: white;
+  overflow: hidden;
+}
+
+.blogTopSection {   
+  .shadowBackground {
+    width: 100%;
+    height: 100%;
+    background: $transparentBackgroud;
+    position: absolute;
+    z-index: 2;
+  }
+  .blogImageTop {
+    width: 100%;
+    height: 15vmin;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+  }
+  .blogTopInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    display: flex;
+    .infoText {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1;
+      justify-content: center;
+      align-items: center; 
+      .blogTitle {
+        color: $primary;
+        font-size: 2.5rem;
+        margin: 0;
+        font-family: "ProximaNovaBold";
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.blogContainer {
+  background: white;
+  padding: 5rem;
+  padding-top: 0;
+  overflow: hidden;
+  .cardContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 1rem;
+    .blogcard {
+      height: 100%;
+    }
+    .blogImage {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+    }
+    .blogTitle {
+      font-size: 1.5rem;
+      font-family: "AVENIR_REGULAR";
+      color: $headerMenuColor;
+    }
+    .blogDetail {
+      font-size: 1.1rem;
+      font-family: "AVENIR_REGULAR";
+      color: $backgroungColor2;
+    }
+    .readMore {
+      border: solid 1px $dashbaordGradient1;
+      margin: 1rem 0 2rem 0;
+      border-radius: 2rem;
+      padding: 0.25rem 0.8rem;
+      background: $whiteColorHeader;
+      font-size: 0.95rem;
+      color: $dashbaordGradient1;
+      font-family: "AVENIR_REGULAR";
+      text-align: center;
+    }
+    .readMore:hover {
+      background: $dashbaordGradient1;
+      color: $whiteColorHeader;
+    }
+  }
+  .cardContainer2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 1rem;
+    //background-color: $primary;
+    text-align: center;
+    .blogcard {
+      height: 100%;
+      background-color: $primary;
+      color: $whiteColorHeader;
+    }
+    .blogcard:hover {
+      background-color: $whiteColorHeader;
+      color: $primary;
+    }
+    .blogTitle {
+      font-size: 1.5rem;
+      font-family: "AVENIR_REGULAR";
+    }
+    .blogDetail {
+      font-size: 1.1rem;
+      font-family: "AVENIR_REGULAR";
+    }
+  }
+  .blogDetails {
+    .blogTitle {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-family: "AVENIR_MEDIUM";
+      color: $whiteColorHeader;
+    }
+    .blogDetail {
+      font-size: 1.1rem;
+      font-family: "AVENIR_REGULAR";
+      color: $whiteColorHeader;
+    }
+  }
+}
+
+.blogTopSectionDetail {
+  height: 25vw;
+  position: relative;
+  margin-bottom: 50px;
+  .shadowBackground {
+    width: 100%;
+    height: 100%;
+    background: $transparentBackgroud;
+    position: absolute;
+    z-index: 2;
+  }
+  .blogImageTop {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+  }
+  .blogTopInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    display: flex;
+   
+    .infoText {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+
+      .blogTitle {
+        color: $whiteColorHeader;
+        font-size: 2.5rem;
+        margin: 0;
+        font-family: "AVENIR_BOLD";
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blogTopSection { 
+    .blogImageTop {
+      height: 35vw !important;
+    }
+    .blogTopInfo {
+      .infoText {
+        .blogTitle {
+          font-size: 2rem !important;
+        }
+      }
+    }
+  }
+
+  .blogContainer {
+    .cardContainer {
+      .blogImage {
+        height: 45vw !important;
+      }
+    }
+  }
+
+  .blogTopSectionDetail {
+    height: 50vw !important;
+    .blogImageTop {
+      height: 50vw !important;
+    }
+    .blogTopInfo {
+      .infoText {
+        .blogTitle {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+.firstContainer {
+  background: $backgroungColor2;
+  font-size: 18px;
+  color: $whiteColorHeader;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 2rem;
+}

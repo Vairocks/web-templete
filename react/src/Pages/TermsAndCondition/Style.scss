@@ -1,0 +1,162 @@
+@import "src/Theme/colors";
+.blogTopSection {
+  height: 15vw;
+  position: relative;
+  background-color: $whiteBackground;
+  color: $primary;
+  .shadowBackground {
+    width: 100%;
+    height: 100%;
+    background: $whiteBackground;
+    position: absolute;
+    z-index: 2;
+  }
+  .blogImageTop {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+  }
+  .blogTopInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    display: flex;
+    .infoText {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+
+      .blogTitle {
+        color: $primary;
+        font-size: 2.5rem;
+        margin: 0;
+        font-family: "ProximaNovaBold";
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blogTopSection {
+    height: 35vw !important;
+    .blogImageTop {
+      height: 35vw !important;
+    }
+    .blogTopInfo {
+      .infoText {
+        .blogTitle {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  .blogContainer {
+    .cardContainer {
+      .blogImage {
+        height: 45vw !important;
+      }
+    }
+  }
+
+  .blogTopSectionDetail {
+    height: 50vw !important;
+    .blogImageTop {
+      height: 50vw !important;
+    }
+    .blogTopInfo {
+      .infoText {
+        .blogTitle {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+.termsConditionBlock {
+  background: $whiteBackground;
+  padding: 2rem;
+  
+  .enrollMessageTitle {
+    color: #212529;
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: "ProximaNovaBold";
+    text-align: center;
+    padding: 1rem 0 0.2rem 0;
+  }
+
+
+  .enrollMessage {
+    margin: 1rem 0 0 0;
+    color: #212529;
+    font-size: 1.5rem;
+    font-family: "ProximaNovaRegular";
+    text-align: left;
+  }
+  .enrollMessage1 {
+    margin: 1rem 0;
+    color: #212529;
+    font-size: 1rem;
+    font-family: "ProximaNovaRegular";
+    text-align: left;
+  }
+  .listTitle {
+    color: #212529;
+    font-size: 1.4rem;
+    font-family: "ProximaNovaRegular";
+    padding: 0.5rem 0;
+    margin-bottom: 0.3rem;
+  } 
+    .Listul {
+      color: #212529;
+      font-size: 1rem;
+      font-family: "ProximaNovaRegular";
+      text-align: left;
+    } 
+  .listContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+  .iconContainer {
+    height: 35px;
+    width: 35px;
+    border: solid 1px $strangeText;
+    margin-right: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    svg {
+      fill: $darkBlue;
+    }
+  }
+  .infoContainer {
+    flex: 1;
+    text-align: left;
+    .listTitle {
+      color: #212529;
+      font-size: 1.4rem;
+      font-family: "ProximaNovaBold";
+      margin: 0;
+      margin-bottom: 0.3rem;
+    }
+    .listInfo {
+      color: #212529;
+      font-size: 0.9rem;
+      font-family: "ProximaNovaRegular";
+      margin: 0;
+      line-height: 1.3;
+    }
+  }
+}

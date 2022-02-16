@@ -1,0 +1,17 @@
+.elasticbeanstalk/*
+node_modules
+react/public
+react/src
+react/.env
+react/node_modules
+react/.babelrc.json
+.env.production
+.eslintrc
+.gitignore
+.prettierrc
+.stylelintrc
+.travis.yml
+react/package-lock.json
+package-lock.json
+react/package.json 
+README.md

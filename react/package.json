@@ -1,0 +1,57 @@
+{
+  "name": "zivov",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.4",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "bootstrap": "^5.1.3",
+    "compression": "^1.7.4",
+    "gulp-sass": "^4.1.0",
+    "i18next": "^19.7.0",
+    "moment": "^2.29.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-bootstrap-icons": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-i18next": "^11.7.2",
+    "react-lines-ellipsis": "^0.14.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "sanitize-html": "^2.3.2"
+  },
+  "scripts": {
+    "start": "rescripts start",
+    "run_prod": "node server.js",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "rescripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.14",
+    "@rescripts/rescript-env": "^0.0.12"
+  },
+  "rescripts": [
+    "env"
+  ]
+}

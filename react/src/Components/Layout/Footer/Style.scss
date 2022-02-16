@@ -1,0 +1,141 @@
+@import "src/Theme/colors";
+.footerCotnainer {
+    overflow: hidden;
+    background: $primary;
+    .footerTop {
+        background:$primary;
+        padding: 1rem;
+       // margin-top: 3rem;
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .logoText {
+            color: $darkBlue;
+            font-size: 2.5rem;
+            font-family: "AVENIR_BOLD";
+            padding-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .infoContainer {
+            display: flex;
+            text-align: left;
+            flex-direction: row;
+            align-items: center;
+            .listTitle {
+                color: $darkBlue;
+                font-size: 1.4rem;
+                font-family: "AVENIR_MEDIUM";
+                margin: 0;
+                margin-bottom: 0.3rem;
+            }
+            .listInfo {
+                color: $darkGrey;
+                font-size: 1rem;
+                font-family: "AVENIR_REGULAR";
+                margin: 0;
+                line-height: 1.3;
+            }
+        }
+
+        .listContainer {
+            display: flex;
+            flex-direction: row;
+        }
+        .iconContainer {
+            height: 30px;
+            width: 30px;
+            border: solid 1px $darkBlue;
+            margin-right: 10px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            svg {
+                fill: $darkBlue;
+            }
+        }
+        .footerSummery {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-family: "AVENIR_REGULAR";
+            color: $darkGrey;
+        }
+        .footerButtonHeading {
+            font-size: 1.5rem;
+            font-family: "AVENIR_REGULAR";
+            color: $darkBlue;
+        }
+        .footerLink {
+            font-size: 1.1rem;
+            font-family: "AVENIR_REGULAR";
+            color: $whiteColorHeader;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            a{
+                cursor: pointer;
+                color: $whiteColorHeader;
+            }
+        }
+        .linkFirst {
+            margin-top: 2rem;
+        }
+        .referinputfield {
+            border-radius: 2rem;
+            width: 85%;
+            background: $whiteColorHeader;
+            padding: 0.5rem 0.3rem;
+            margin: 0;
+            border: solid 1px $darkGrey;
+            outline: none !important;
+            color: $darkGrey;
+        }
+        .submitButton {
+            font-family: "AVENIR_REGULAR";
+            font-weight: bold;
+            color: $whiteColorHeader;
+            border: none;
+            margin-top: 1rem;
+            margin-left: 10px;
+            width: 110px;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            background-image: linear-gradient(to left, $dashbaordGradient1, $dashbaordGradient);
+        }
+        .referinputfield::placeholder {
+            color: $grey5;
+            opacity: 1;
+        }
+    }
+    .footerContainer {
+        background: $primary;
+        padding: 1rem;
+        text-align: center;
+        overflow: hidden;
+        .f1 {
+            margin: 0;
+            padding: 0px 0;
+            font-size: 0.8rem;
+            font-family: "AVENIR_REGULAR";
+            color: $whiteColorHeader;
+        }
+        .f2 {
+            margin: 0;
+            padding: 0px 0;
+            font-size: 1rem;
+            font-family: "AVENIR_REGULAR";
+            color: $whiteColorHeader;
+            text-decoration:underline;
+        }
+    }
+
+    .emailText {
+        color: $darkGrey;
+        font-size: 1.1rem;
+        font-family: "AVENIR_REGULAR";
+        cursor: pointer;
+    }
+}

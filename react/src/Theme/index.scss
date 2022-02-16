@@ -1,0 +1,112 @@
+@import "./colors";
+@import "./customThems";
+.pageSpinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body p {
+  word-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+  .bannerContainer {
+    .bannerHeading {
+      text-align: center;
+    }
+    .bannerImage {
+      width: 25rem !important;
+    }
+    .bannerContainer {
+      text-align: center;
+      vertical-align: bottom;
+    }
+    .bannerSubHeading {
+      text-align: center;
+    }
+    .alightRight {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .parentPage {
+    .bannerContainer {
+      .bannerHeading {
+        font-size: 2.5rem !important;
+      }
+      .bannerImage {
+        width: 22rem !important;
+      }
+    }
+    .referInputContainer {
+      width: 20rem !important;
+    }
+    .referButton {
+      font-size: 0.8rem !important;
+    }
+    .docPatientSection {
+      padding: 0 1rem !important;
+    }
+    .patientImage {
+      margin-bottom: 3rem;
+    }
+    .enrollMessageTitle,
+    .enrollMessageTitle_doctor {
+      padding: 2rem 0 0.2rem 0 !important;
+    }
+    .referContainer_doctor {
+      padding-bottom: 0 !important;
+    }
+    .innerContainer1 {
+      width: 60% !important;
+    }
+  }
+
+  .footerCotnainer {
+    .footerButtonHeading {
+      margin-top: 2rem;
+    }
+  }
+  .navigationBar {
+    .navlinkWebActive {
+      &:before {
+        height: 0px;
+      }
+    }
+  }
+  .referContainerReferPage {
+    .sodeRegistrationInfo {
+      margin-top: 3rem;
+    }
+  }
+  .referContainerDetail {
+    .circle {
+      width: 90px !important;
+      height: 90px !important;
+      .circle_medium {
+        width: 70px !important;
+        height: 70px !important;
+      }
+      .numberCircle {
+        width: 35px !important;
+        height: 35px !important;
+        .textNumber {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+    .stepsContainer_title {
+      .circle_title {
+        text-align: center;
+      }
+    }
+    .referInputContainer {
+      width: 20rem !important;
+    }
+  }
+}

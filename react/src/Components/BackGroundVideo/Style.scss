@@ -1,0 +1,46 @@
+@import "src/Theme/colors";
+
+.conatiner {
+    //min-height:150px;
+    background: $blackBackground;
+}
+
+.bgstyle {
+    position:fixed;
+    z-index:-1;
+    object-fit:fill;
+    
+    width: 100vmax;
+    height: 100vh;
+    background: rgb(85,107,121);
+   // background: linear-gradient(to bottom right,#506775  0%,#7E8C97  99%);
+
+}
+
+.bgstyle2 {
+    position:fixed;
+    z-index:0;
+    right:0;
+    //object-fit:fill;
+    float: right;
+    //float: right;
+   width: 0vmax;
+   height: 100vh;
+   background: rgb(85,107,121);
+//background: linear-gradient(to bottom right,#506775  0%,#7E8C97  99%);
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .bgstyle {
+        position:fixed;
+        object-fit:fill;
+        z-index:-1;
+       // width: 120vw;
+       // height: 100vh;
+        //-webkit-transform: translate(-60vh,0);
+    }   
+}

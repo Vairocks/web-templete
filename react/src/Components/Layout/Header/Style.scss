@@ -1,0 +1,98 @@
+@import "src/Theme/colors";
+
+.navigationBar {
+    background: $primary;
+    min-height: 60px;
+    width:100% ;
+    padding:10px;
+    overflow-x:hidden ;
+    //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    .logo {
+        height: 2rem;
+        margin-left: 00.5rem;
+        width: 6rem1;
+    }
+    .logoText {
+        color: white;
+        font-size: 1rem;
+        font-family: "AVENIR_MEDIUM";
+        padding-left: 0.5rem;
+        padding-top: 15rem;
+        vertical-align: middle;
+    }
+
+    .activationCodeBt {
+        font-family: "AVENIR_REGULAR";
+        font-weight: bold;
+        color: $whiteColorHeader;
+        border: none;
+        font-size: 0.9rem;
+        background-image: linear-gradient(to left, $dashbaordGradient1, $dashbaordGradient);
+    }
+    .navlinkWeb{
+        margin-left: 1rem;
+      //  margin-right: 1rem;
+        font-family: "ProximaNovaBold";
+       // font-weight: bold;
+        font-size: 1rem;
+       // padding-left: 1rem!important;
+       // padding-right: 1rem;
+        color:whitesmoke!important
+    }
+    .navlinkWebActive {
+        position: relative; 
+        &:before {
+            background-image: linear-gradient(to left, $dashbaordGradient1, $dashbaordGradient)!important;
+            top: -17px;
+            left: 0;
+            position: absolute;
+            content: " ";
+            width: 100%;
+            display: block;
+            height: 8px;
+        }
+    }
+}
+.navbar{
+    padding: 10px 10px !important;
+}
+.navbar-collapse{
+    width: 120%;
+    //background: $backgroungColor2;
+    text-align: left;
+    padding-right:0.5rem ;
+}
+
+
+.navbar-toggle{
+    width: 120%;
+    background: $backgroungColor2;
+    text-align: right;
+    padding-right:0.5rem ;
+}
+nav.navbar {
+    background: $primary;
+  }
+  .bookSession{   
+    border:1px solid #fff;
+    background-color:transparent;
+    color:white !important;
+    border-radius:20px;
+    padding:0.5em 10px;
+    font-weight:bold;
+    margin-left:auto;
+    margin-top: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    }
+    .bookSession:hover{
+        color:white;
+    }
+
+    @media only screen and (max-width: 768px) {        
+        .bookSession{
+            margin-top: 10px !important;
+            margin-right: 50px !important;
+    
+        }
+    }

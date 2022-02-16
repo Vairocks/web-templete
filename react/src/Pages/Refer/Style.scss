@@ -1,0 +1,94 @@
+@import "src/Theme/colors";
+.referContainerReferPage {
+    padding: 0rem 2rem 0 2rem;
+    margin: 5rem 0;
+    .colForm {
+        background: $whiteColorHeader;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06), 0px 2px 14px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        margin: 10px;
+    }
+    .formInnerContainer {
+        width: 80%;
+        padding-left: 1rem;
+        padding: 2rem 0 2rem 1rem;
+        label{
+            color: $darkGrey;
+            font-size: 1rem; 
+            font-family: "AVENIR_REGULAR";
+            text-align: left!important;
+        }
+        span{
+            color:red
+        }
+    }
+    .listContainer {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+    }
+    .iconContainer {
+        height: 35px;
+        width: 35px;
+        border: solid 1px $darkBlue;
+        margin-right: 20px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        svg {
+            fill: $darkBlue;
+        }
+    }
+    .infoContainer {
+        flex: 1;
+        text-align: left;
+        .listTitle {
+            color: $darkBlue;
+            font-size: 1.4rem;
+            font-family: "AVENIR_MEDIUM";
+            margin: 0;
+            margin-bottom: 0.3rem;
+        }
+        .listInfo {
+            color: $darkGrey;
+            font-size: 0.9rem;
+            font-family: "AVENIR_REGULAR";
+            margin: 0;
+            line-height: 1.3;
+        }
+    }
+    .enrollMessageTitle {
+        color: $darkBlue;
+        font-size: 2.5rem;
+        margin: 0;
+        font-family: "AVENIR_BOLD";
+        text-align: left;
+        padding: 0rem 0 0.2rem 0;
+    }
+    .enrollMessage {
+        margin: 0;
+        color: $headerMenuColor;
+        font-size: 1.5rem;
+        font-family: "AVENIR_REGULAR";
+        text-align: left;
+    }
+    .enrollMessage1 {
+        margin: 0 0 1rem 0;
+        color: $headerMenuColor;
+        font-size: 1rem;
+        font-family: "AVENIR_REGULAR";
+        text-align: left;
+    }
+    .submitButton {
+        font-family: "AVENIR_REGULAR";
+        font-weight: bold;
+        color: $whiteColorHeader;
+        border: none;
+        margin-top: 1rem; 
+        width: 110px;
+        padding: 8px 0;
+        font-size: 0.9rem;
+        background-image: linear-gradient(to left, $dashbaordGradient1, $dashbaordGradient);
+    }
+}
